@@ -1,8 +1,5 @@
-#
-# Desc.: Plants trees and crops after 5 minutes on right ground.
-# Called By: #nuhser_core:tick
-# @s: <SERVER>
-#
+#> Plants trees and crops after 5 minutes on right ground.
+# Called By: #nuhser_core:tick <SERVER>
 
 #check for sapling on dirt blocks and plant them
 execute as @e[type=item,nbt={Item:{id:"minecraft:oak_sapling"},Age:5999s}] at @s if block ~ ~-1 ~ #minecraft:dirts run setblock ~ ~ ~ minecraft:oak_sapling

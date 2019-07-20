@@ -1,8 +1,5 @@
-#
-# Desc.: Disables auto_plant
-# Called By: #nuhser_core:uninstall
-# @s: <SERVER>
-#
+#> Disables auto_plant
+# Called By: #nuhser_core:uninstall <SERVER>
 
 #disable auto_plant
 tellraw @a ["",{"text":"Uninstall Auto Plant...","color":"yellow"}]

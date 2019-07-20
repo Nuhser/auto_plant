@@ -1,8 +1,5 @@
-#
-# Desc.: Help messages for Auto Plant
-# Called By: #nuhser_core:help
-# @s: <SERVER>
-#
+#> Help messages for Auto Plant
+# Called By: #nuhser_core:help <SERVER>
 
 #item for list of installed mods
 tellraw @a[scores={help=1}] [{"text":">  "},{"text":"[Auto Plant]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger help set 5"}}]
