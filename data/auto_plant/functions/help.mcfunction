@@ -6,4 +6,4 @@ tellraw @a[scores={help=1}] [{"text":">  "},{"text":"[Auto Plant]","color":"yell
 
 #explanation of nuhser mod
 tellraw @a[scores={help=5}] [{"text":"\nAuto Plant","underlined":true,"color":"dark_aqua"},{"text":" (v3.0.0)\n","underlined":false}]
-tellraw @a[scores={help=5}] [{"text":"This datapack keeps track of the sapling and plant item in your world and automacilly plants them after lying on the ground for "},{"text":"5 minutes","bold":true},{"text":".","bold":false}]
+tellraw @a[scores={help=5}] [{"text":"This datapack keeps track of the sapling and plant items in your world and automacilly plants them after lying on the correct ground for "},{"text":"5 minutes","italic":true},{"text":".","bold":false}]
