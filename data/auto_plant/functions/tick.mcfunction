@@ -26,3 +26,11 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:cactus"},Age:5999s}] at @s if b
 # check for bamboo on grass blocks, dirt, sand, gravel, mycelium, podzol, coarse dirt or red sand and plant them
 execute as @e[type=item,nbt={Item:{id:"minecraft:bamboo"},Age:5999s}] at @s if block ~ ~-1 ~ #auto_plant:bamboo_growable run setblock ~ ~ ~ minecraft:bamboo_sapling
 
+# check for chorus flowers on end stone and plant them
+execute as @e[type=item,nbt={Item:{id:"minecraft:chorus_flower"},Age:5999s}] at @s if block ~ ~-1 ~ minecraft:end_stone run setblock ~ ~ ~ minecraft:chorus_flower
+
+# check for sweet berry on grass blocks, dirt, podzol, coarse dirt or farmland and plant them
+execute as @e[type=item,nbt={Item:{id:"minecraft:sweet_berries"},Age:5999s}] at @s if block ~ ~-1 ~ #auto_plant:sweet_berry_growable run setblock ~ ~ ~ minecraft:sweet_berry_bush
+
+# check for sugar cane on grass blocks, dirt, podzol, coarse dirt, sand or red sand and plant them
+execute as @e[type=item,nbt={Item:{id:"minecraft:sugar_cane"},Age:5999s}] at @s if block ~ ~-1 ~ #auto_plant:sugar_cane_growable run setblock ~ ~ ~ minecraft:sugar_cane
