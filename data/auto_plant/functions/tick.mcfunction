@@ -21,7 +21,7 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:carrot"},Age:5999s}] at @s if b
 execute as @e[type=item,nbt={Item:{id:"minecraft:potato"},Age:5999s}] at @s if block ~ ~ ~ minecraft:farmland run setblock ~ ~1 ~ minecraft:potatoes
 
 # check for cactus on sand and plant them
-execute as @e[type=item,nbt={Item:{id:"minecraft:cactus"},Age:5999s}] at @s if block ~ ~-1 ~ minecraft:sand run setblock ~ ~ ~ minecraft:cactus
+execute as @e[type=item,nbt={Item:{id:"minecraft:cactus"},Age:5999s}] at @s if block ~ ~-1 ~ #auto_plant:cactus_growable run setblock ~ ~ ~ minecraft:cactus
 
 # check for bamboo on grass blocks, dirt, sand, gravel, mycelium, podzol, coarse dirt or red sand and plant them
 execute as @e[type=item,nbt={Item:{id:"minecraft:bamboo"},Age:5999s}] at @s if block ~ ~-1 ~ #auto_plant:bamboo_growable run setblock ~ ~ ~ minecraft:bamboo_sapling
