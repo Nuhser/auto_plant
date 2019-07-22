@@ -30,7 +30,8 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:bamboo"},Age:5999s}] at @s if b
 execute as @e[type=item,nbt={Item:{id:"minecraft:chorus_flower"},Age:5999s}] at @s if block ~ ~-1 ~ minecraft:end_stone if block ~ ~ ~ minecraft:air run setblock ~ ~ ~ minecraft:chorus_flower
 
 # check for sweet berry on grass blocks, dirt, podzol, coarse dirt or farmland and plant them
-execute as @e[type=item,nbt={Item:{id:"minecraft:sweet_berries"},Age:5999s}] at @s if block ~ ~-1 ~ #auto_plant:sweet_berry_growable if block ~ ~ ~ minecraft:air run setblock ~ ~ ~ minecraft:sweet_berry_bush
+execute as @e[type=item,nbt={Item:{id:"minecraft:sweet_berries"},Age:5999s}] at @s if block ~ ~-1 ~ #minecraft:dirts if block ~ ~ ~ minecraft:air run setblock ~ ~ ~ minecraft:sweet_berry_bush
+execute as @e[type=item,nbt={Item:{id:"minecraft:sweet_berries"},Age:5999s}] at @s if block ~ ~ ~ minecraft:farmland if block ~ ~1 ~ minecraft:air run setblock ~ ~1 ~ minecraft:sweet_berry_bush
 
 # check for sugar cane on grass blocks, dirt, podzol, coarse dirt, sand or red sand and plant them
 execute as @e[type=item,nbt={Item:{id:"minecraft:sugar_cane"},Age:5999s}] at @s if block ~ ~-1 ~ #auto_plant:sugar_cane_growable if block ~ ~ ~ minecraft:air run setblock ~ ~ ~ minecraft:sugar_cane
