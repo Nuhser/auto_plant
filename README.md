@@ -4,7 +4,7 @@
 
 <br>
 
-**Requires [nuhser_core](https://github.com/Nuhser/nuhser_core "Nuhser_Core") to be installed first!**
+**Requires [nuhser_core 4.0.0](https://github.com/Nuhser/nuhser_core "Nuhser_Core") to be installed first!**
 
 This datapack keeps track of the sapling and plant items in your world and automacilly plants them after lying on the correct ground for *5 minutes*.
 
