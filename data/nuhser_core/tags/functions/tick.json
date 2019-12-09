@@ -1,6 +1,6 @@
 {
   "replace": false,
 	"values": [
-		"auto_plant:tick"
+		"auto_plant:_tick"
 	]
 }

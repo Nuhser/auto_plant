@@ -1,7 +1,7 @@
 {
     "replace": false,
       "values": [
-          "auto_plant:init"
+          "auto_plant:_init"
       ]
   }
   
