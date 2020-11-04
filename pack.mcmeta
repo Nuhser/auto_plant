@@ -1,6 +1,6 @@
 {
 	"pack": {
-		"pack_format": 5,
+		"pack_format": 6,
 		"description": "This pack plants almost every plant in minecraft automatically after 5 minutes. Reload after installing the pack. Requires nuhser core to be installed first!"
 	}
 }
