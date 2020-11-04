@@ -35,3 +35,11 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:sweet_berries"},Age:5999s}] at 
 
 # check for sugar cane on grass blocks, dirt, podzol, coarse dirt, sand or red sand and plant them
 execute as @e[type=item,nbt={Item:{id:"minecraft:sugar_cane"},Age:5999s}] at @s if block ~ ~-1 ~ #auto_plant:sugar_cane_growable if block ~ ~ ~ minecraft:air run setblock ~ ~ ~ minecraft:sugar_cane
+
+# check for mushroom on mycelium or podzol
+execute as @e[type=item,nbt={Item:{id:"minecraft:brown_mushroom"},Age:5999s}] at @s if block ~ ~-1 ~ #auto_plant:mushroom_growable if block ~ ~ ~ minecraft:air run setblock ~ ~ ~ minecraft:brown_mushroom
+execute as @e[type=item,nbt={Item:{id:"minecraft:red_mushroom"},Age:5999s}] at @s if block ~ ~-1 ~ #auto_plant:mushroom_growable if block ~ ~ ~ minecraft:air run setblock ~ ~ ~ minecraft:red_mushroom
+
+# check for fungus on nylium or mycelium
+execute as @e[type=item,nbt={Item:{id:"minecraft:crimson_fungus"},Age:5999s}] at @s if block ~ ~-1 ~ #auto_plant:fungus_growable if block ~ ~ ~ minecraft:air run setblock ~ ~ ~ minecraft:crimson_fungus
+execute as @e[type=item,nbt={Item:{id:"minecraft:warped_fungus"},Age:5999s}] at @s if block ~ ~-1 ~ #auto_plant:fungus_growable if block ~ ~ ~ minecraft:air run setblock ~ ~ ~ minecraft:warped_fungus
